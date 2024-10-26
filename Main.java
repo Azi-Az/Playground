@@ -15,7 +15,36 @@ public class Main {
         System.out.println("Program do konwersji stopni C na F");
 
 
+        int firstNumber;
+        int secondNumber;
+        int thirdNumber;
 
+        boolean done = false;
+
+        while (!done) {
+
+            try {
+
+                Scanner input = new Scanner(System.in);
+                System.out.println("Podaj pierwszą liczbę: ");
+                firstNumber = input.nextInt();
+                System.out.println("Podaj drugą liczbę: ");
+                secondNumber = input.nextInt();
+                System.out.println("Podaj trzecią liczbę: ");
+                thirdNumber = input.nextInt();
+
+                if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+                    System.out.println("Największą liczbą jest: " + firstNumber);
+                } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+                    System.out.println("Największą liczbą jest: " + +secondNumber);
+                } else {
+                    System.out.println("Największą liczbą jest: " + thirdNumber);
+                }
+                done = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Proszę podać liczbę całkowitą");
+            }
+        }
 
 
 
