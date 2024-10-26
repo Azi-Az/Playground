@@ -13,7 +13,7 @@ public class Main {
 //     String text = a > b ? "prawda" : "fałsz";
 //
 //     System.out.println(text);
-
+h
 
 
     }
