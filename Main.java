@@ -49,7 +49,12 @@ public class Main {
 
 
 
+     // int a = 5;
+     // int b = 10;
 
+     // String text = a > b ? "prawda" : "fałsz";
+     
+     // System.out.println(text);
 
 
 
