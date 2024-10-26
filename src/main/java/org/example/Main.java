@@ -5,15 +5,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Program do konwersji stopni C na F");
+        System.out.println("Program do wyznaczania największej z 3 liczb");
 
-
-
-
-
-
-
-
+//     int a = 5;
+//     int b = 10;
+//
+//     String text = a > b ? "prawda" : "fałsz";
+//
+//     System.out.println(text);
 
 
 
@@ -21,6 +20,7 @@ public class Main {
 
 
 }
+
 
 //double temp;
 //
