@@ -1,18 +1,9 @@
-public class Main {
-    public static void main(String() args) {
-        int number = 5;
-        int secondNumber = 8;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
-        if (number>secondNumber) {
-            System.out.println("Your number is bigger than: "+secondNumber);
-        } else {
-            System.out.println("Your number is smaller than: "+secondNumber)
-        }
-    }
-}
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Program do konwersji stopni C na F");
+        System.out.println("Program do znajdowania największej i najmniejszej z 3 liczb");
 
 
         int firstNumber;
@@ -33,16 +24,32 @@ public class Main {
                 System.out.println("Podaj trzecią liczbę: ");
                 thirdNumber = input.nextInt();
 
+                int maxNumber;
+                int minNumber;
+
                 if (firstNumber > secondNumber && firstNumber > thirdNumber) {
-                    System.out.println("Największą liczbą jest: " + firstNumber);
+                    maxNumber = firstNumber;
                 } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-                    System.out.println("Największą liczbą jest: " + +secondNumber);
+                    maxNumber = secondNumber;
                 } else {
-                    System.out.println("Największą liczbą jest: " + thirdNumber);
+                    maxNumber = thirdNumber;
                 }
+
+                if (firstNumber < secondNumber && firstNumber < thirdNumber) {
+                    minNumber= firstNumber;
+                } else if (secondNumber < firstNumber && secondNumber < thirdNumber) {
+                    minNumber = secondNumber;
+                } else {
+                    minNumber = thirdNumber;
+                }
+
+                System.out.println("Największą liczbą jest: " + maxNumber);
+                System.out.println("Najmniejszą liczbą jest: " + minNumber);
+
                 done = true;
             } catch (InputMismatchException e) {
                 System.out.println("Proszę podać liczbę całkowitą");
+
             }
         }
 
